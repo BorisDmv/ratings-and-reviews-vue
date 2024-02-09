@@ -3,9 +3,6 @@
       
       <div class="container">
         <div class="content">
-          <div class="library">   
-            <button class="default-btn" @click="libaryClick()">LIBRARY<img class="arrowIcon" src="../assets/next.png"></button>
-          </div>
           <div class="titleCont">
             <div class="title-date">
             <p>{{ this.game.title }}</p>
@@ -102,12 +99,15 @@ export default {
         {
           id: '1',
           bannerImage: 'https://cdn1.epicgames.com/b4565296c22549e4830c13bc7506642d/offer/TETRA_PREORDER_STANDARD%20EDITION_EPIC_Store_Landscape_2560x1440-2560x1440-827a9d1823ad230a0ea5a2efc7936370.jpg',
-          title: '...',
-          releaseDate: '...',
-          platforms: '...',
-          genres: '...',
-          developers: '...',
-          description: '...',
+          title: 'Far Cry 6',
+          releaseDate: 'October 7, 2021',
+          platforms: 'PC,Playstation,Xbox',
+          win: 1,
+          ps: 1,
+          xbox: 1,
+          genres: 'First Person Shooter',
+          developers: 'Ubisoft',
+          description: '',
           trailer: '...',
           gameImages: ['https://cdn1.epicgames.com/b4565296c22549e4830c13bc7506642d/offer/TETRA_PREORDER_STANDARD%20EDITION_EPIC_Store_Landscape_2560x1440-2560x1440-827a9d1823ad230a0ea5a2efc7936370.jpg']
         },
@@ -131,7 +131,7 @@ export default {
     }
   },
   mounted() {
-    this.fetchGame(this.$route.params.id);
+    //this.fetchGame(this.$route.params.id);
   }
 }
 </script>

@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+    <router-view v-slot="slotProps">
     <transition
         :name="transitionName"
          mode="out-in"
-         >
-    <router-view />
+         > 
+         <component :is="slotProps.Component"></component>
     </transition>
+  </router-view>
   </div>
 </template>
 
